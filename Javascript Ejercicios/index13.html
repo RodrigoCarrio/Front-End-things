@@ -1,0 +1,43 @@
+<!--
+De un postulante a un empleo, que realizó un test de capacitación, se obtuvo la siguiente información:
+nombre del postulante, cantidad total de preguntas que se le realizaron y cantidad de preguntas que
+contestó correctamente. Se pide confeccionar un programa que lea los datos del postulante e informe el
+nivel del mismo según el porcentaje de respuestas correctas que ha obtenido, y sabiendo que:
+Nivel superior: Porcentaje&gt;=90%.
+Nivel medio: Porcentaje&gt;=75% y &lt;90%.
+Nivel regular: Porcentaje&gt;=50% y &lt;75%.
+Fuera de nivel: Porcentaje&lt;50%.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nombre_postulante;
+        let cantidad_preguntas_realizadas;
+        let cantidad_respuestas_correctas;
+        let porcentaje;
+
+        nombre_postulante = prompt("Ingrese el Nombre del postulante: ");
+        cantidad_preguntas_realizadas = parseInt(prompt('Ingrese la cantidad de preguntas realizadas al postulante: '));
+        cantidad_respuestas_correctas = parseInt(prompt('Ingrese la cantidad de respuestas correctas que realizo el postulante: '));
+        porcentaje = (cantidad_respuestas_correctas / cantidad_preguntas_realizadas)*100;
+
+        if(porcentaje>=90){
+            document.write('Nivel superior');
+        } else if(porcentaje >= 75 && porcentaje < 90){
+            document.write('Nivel medio');
+        } else if(porcentaje >= 50 && porcentaje < 75){
+            document.write('Nivel regular');
+        } else {
+            document.write('Fuera de nivel');
+        }
+    </script>
+</body>
+</html>

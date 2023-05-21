@@ -1,0 +1,36 @@
+<!-- 
+Se ingresan tres notas de un alumno, si el promedio es mayor o igual a 4 mostrar un mensaje 'regular', sino 
+reprobado
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nota10;
+        let nota20;
+        let nota30;
+
+        nota10 = parseInt(prompt('Ingrese la primer nota (no debe ser menor a 1 y mayor a 10): '));
+        nota20= parseInt(prompt('Ingrese la segunda nota (no debe ser menor a 1 y mayor a 10): '));
+        nota30 = parseInt(prompt('Ingrese la tercer nota (no debe ser menor a 1 y mayor a 10): '));
+
+        sum = nota10 + nota20 + nota30;
+        promedio = sum / 3;       
+        if (nota10 > 10 || nota10 < 1 && nota20 > 10 || nota20 < 1 && nota30 > 10 || nota30 < 1 ){
+            document.write('Ingrese notas del 1 al 10');  
+        } else if (promedio >= 4){
+            document.write('Regular');
+        } else {
+            document.write('Reprobado');
+        }    
+    </script>
+    
+</body>
+</html>

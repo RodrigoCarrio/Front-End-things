@@ -1,0 +1,30 @@
+<!--
+Se ingresan tres notas de un alumno, si el promedio es mayor o igual a siete mostrar el mensaje 'Promocionado'. Tener en cuenta que para obtener el promedio debemos operar suma=nota1+nota2+nota3; y luego hacer promedio=suma/3;   
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nota1
+        let nota2
+        let nota3
+
+        nota1 = parseInt(prompt('Ingrese la primer nota (no debe ser menor a 1 y mayor a 10): '));
+        nota2 = parseInt(prompt('Ingrese la segunda nota (no debe ser menor a 1 y mayor a 10): '));
+        nota3 = parseInt(prompt('Ingrese la tercer nota (no debe ser menor a 1 y mayor a 10): '));
+        sum = nota1 + nota2 + nota3;
+        promedio = sum / 3;
+        if (nota1 > 10 || nota1 < 1 && nota2 > 10 || nota2 < 1 && nota3 > 10 || nota3 < 1 ){
+            document.write('Ingrese notas del 1 al 10');  
+        } else if (promedio >= 7){
+            document.write('Promocionado');
+        }     
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!-- 
+Se ingresa por teclado un valor entero, mostrar una leyenda que indique si el número es positivo, cero o
+negativo.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numero;
+
+        numero = parseInt(prompt('Ingrese un valor entero: '));
+
+        if(numero < 0){
+            document.write('El numero es negativo');
+        } else if(numero == 0){
+            document.write('El numero ingresado es '+numero);
+        } else{
+            document.write('El numero es positivo');
+        }
+    </script>
+</body>
+</html>

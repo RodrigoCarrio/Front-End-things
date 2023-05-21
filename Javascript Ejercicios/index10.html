@@ -1,0 +1,28 @@
+<!-- 
+Solicitar que se ingrese dos veces una clave. Mostrar un mensaje si son iguales y otro si son distintas
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let password;
+        let password_confirm;
+
+        password = prompt('Ingrese la contraseña: ');
+        password_confirm = prompt('Ingrese la contraseña nuevamente: ');
+
+        if (password == password_confirm){
+            document.write('Exito, son iguales');
+        } else {
+            document.write('La clave son distintas'); 
+        }
+    </script>
+</body>
+</html>

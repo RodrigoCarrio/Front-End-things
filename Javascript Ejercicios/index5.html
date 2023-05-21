@@ -1,0 +1,35 @@
+<!--
+Escribir un programa en el cual se ingresen cuatro números, calcular e informar la suma de los dos primeros y el producto del tercero y el cuarto.    
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num_1;
+        let num_2;
+        let num_3;
+        let num_4;
+        
+        num_1 = parseInt(prompt('Ingrese el primer numero: '));
+        num_2 = parseInt(prompt('Ingrese el segundo numero: '));
+        num_3 = parseInt(prompt('Ingrese el tercer numero: '));
+        num_4 = parseInt(prompt('Ingrese el cuarto numero: '));
+        
+        let suma = num_1 + num_2;
+        let multiplicacion = num_3 * num_4;
+        
+        document.write('Ingreso los numeros '+num_1+','+num_2+','+num_3+','+num_4);
+        document.write('<br>');        
+        document.write('La suma de '+num_1+' + '+num_2+' es igual a '+suma);
+        document.write('<br>');        
+        document.write('El producto de '+num_3+' * '+num_4+' es igual a '+multiplicacion);
+    
+    </script>
+</body>
+</html>

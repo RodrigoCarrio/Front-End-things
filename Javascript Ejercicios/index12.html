@@ -1,0 +1,32 @@
+<!--
+Confeccionar un programa que permita cargar un número entero positivo de hasta tres cifras y muestre un
+mensaje indicando si tiene 1, 2, o 3 cifras.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numero;
+
+        numero = parseInt(prompt('Ingrese un valor entero positivo de hasta 3 cifras: '));
+        if(numero !== null && numero !== "" && /^\d{3}$/.test(numero)){
+            document.write('El numero contiene 3 digitos y es:'+ numero);
+        } else if (numero !== null && numero !== "" && /^\d{2}$/.test(numero)){
+            document.write('El numero contiene 2 digitos y es: '+ numero);
+        } else if (numero !== null && numero !== "" && /^\d{1}$/.test(numero)){
+            document.write('El numero contiene 1 digito y es: '+ numero);
+        } else {
+            document.write('No ingreso un numero entero y positivo');
+        }
+            
+
+    </script>
+</body>
+</html>

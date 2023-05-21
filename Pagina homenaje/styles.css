@@ -1,0 +1,118 @@
+* {
+    padding: 3px;
+    margin: 3px;
+    border: 0px;
+}
+
+body {
+    color: #2a150d;
+    text-align: left;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background-image: url(Imagenes/maradona\ copa\ del\ mundo.jpg);
+}
+
+h1, h3 {
+    text-align: center;
+}
+
+h1 {
+    text-decoration: underline;
+}
+
+
+li {
+    margin: 5px;
+    padding: 20px 0px;
+    border-bottom: 2px solid black;
+
+}
+
+figure {
+    text-align: center;
+    background-color: white;
+    box-shadow: 0px 0px 3px 10px rgb(179, 221, 255);
+    border-radius: 20px;
+}
+
+blockquote {
+    font-family: Cambria, "Liberation Serif", "Times New Roman", serif;
+    font-style: italic;
+    border: 2px dotted black;
+    border-radius: 10px;
+}
+
+blockquote footer {
+    text-align: right;
+    font-style: normal;
+}
+
+
+.containner__caracteristicas {
+    margin-top: 0px;
+}
+
+.saber_mas {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.3em;
+
+}
+
+.containner {
+    margin: auto;
+    display: block;
+    width: 70%;
+    background-color: #9d9e51;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 30px;
+}
+
+.containner__image {
+    display: block;
+    margin: 0 auto;
+    width: 20%;
+    min-width: 100px;
+    border-radius: 20px;
+}
+
+.containner__diego {
+    background-color: rgb(31, 147, 255);
+}
+
+.containner__cita {
+    width: 80%;
+    margin: auto;
+    display: block;
+}
+
+
+.containner__diego--active {
+    background-color: white;
+}
+
+
+.containner__subtitulo {
+    font-size: 1.5em;
+    margin-bottom: 6px;
+}
+
+.containner__section {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+.containner__diego img {
+    display: block;
+    margin: 0 auto;
+    width: 20%;
+    min-width: 100px;
+    border-radius: 20px;
+
+}
+
+.containner__diego--active img {
+    box-shadow: 0px 0px 20px 20px rgb(255, 255, 0);
+}
+

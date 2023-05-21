@@ -1,0 +1,389 @@
+/* Sobrescribe el estilo por defecto
+y establece el padding y el margen a cero */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Texto color blanco en todas partes y todo lo que este dentro del body va a tener esa fuente de letra */
+body {
+    font-family: "lato", sans-serif;
+    color: white;
+}
+
+/* Hacer todo el texto de los links negro y sin decoración*/
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/*Tamaño de fuente, peso de fuente, margen de todos los h1 con respecto a la caja
+ altura de linea y color negro para los h1*/
+h1 {
+    font-size: 30px;
+    font-weight: 600;
+    margin: 10px 0;
+    line-height: 1.2;
+    color: whitesmoke;
+}
+
+/*Tamaño de fuente, peso de fuente, margen y altura de linea */
+h2 {
+    font-size: 25px;
+    font-weight: 300;
+    margin: 10px 0;
+    line-height: 1.2;
+}
+
+/*Tamaño de fuente a los parrafos */
+p {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+/* Todas las imágenes deben ser del mismo tamañño que su contenedor*/
+img {
+    width: 100%;
+}
+
+/* Remover el estilo a los elementos de una lista */
+li {
+    list-style-type: none;
+}
+
+footer {
+    background-color: purple;
+    padding: 20px 10px;
+}
+
+footer a {
+    color: white;
+    margin: 0 10px;
+}
+
+/* Centra el elemento y establece un ancho máximo
+y se asegura que los elementos puedan fluir através*/
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    overflow: visible;   
+}
+
+/* Aplica el color de fondo, altura y "padding"*/
+.navbar {
+    background-color: purple;
+    height: 70px;
+    padding:  0 30px;
+}
+
+/* En la clase grid, se crea 2 columnas dentro del contenedor. Una con el 60% y la otra con el restante */
+.grid {
+    overflow: visible;
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+/*Espacios entre en aread de navegacion y area de presentacion */ 
+.grid-item-1,.grid-item-2 {
+    position: relative;
+    top: 50px;
+}
+
+/* Altura de la seccion principal y color de fondo */
+.showcase{
+    height: 300px;
+    background-color: cadetblue;
+}
+
+/* Al boton se le suavizan los bordes, con rellleno, color, y color de fondo. */
+.btn {
+    border-radius: 10px ;
+    padding: 12px 20px;
+    background: purple;
+    border: none;
+    margin-left: 10px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2)
+}
+
+/* Apunta a todos los elementos h3 con clase CSS title */
+.title {
+    color: black;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+/* Apunta a todos los parrafos con la clase CSS text */
+.text {
+    color: black;
+    font-size: 19px;
+    width: 100%;
+    padding: 10px;
+    margin: 0 20px;
+    text-align: justify;
+}
+
+/* Mostrar horizontalmente, poner un poco de espacio alrededor */
+.flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Agregar algo de padding alrededor del contenedor. Alinear el texto al centro */
+.stats {
+    padding: 45px 50px;
+    text-align: center;
+}
+
+/* Aplicar margen y ancho */
+.stat {
+    margin: 0 30px;
+    text-align: center;
+    width: 800px;
+}
+
+/* Cambio el tamaño de fuente y el tipo de fuente del parrafo */
+.little-info {
+    font-size: 15px;
+    font-family: "poppins", sans-serif;
+  
+}
+
+/* Centra el contenedor, aplica un ancho máximo*/
+.lower-container {
+    margin: 120px auto;
+    padding: 0;
+    max-width: 1400px;
+}
+
+/*  */
+.showcase-form {
+    margin: auto;
+}
+
+.testimonial {
+    color: black;
+    padding: 40px;
+}
+
+/* Crear un grid de tres columnas equidistantes. Definir un espaciado de 40px entre ellas */
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+/* Crear una tarjeta en blanco con sombreado alrededor */
+.card {
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: -7px -7px 20px rgba(0, 0, 0, 0.2), 7px  7px 20px rgba(0, 0, 0, 0.2)
+}
+
+/*  */
+.circle {
+    background-color: transparent;
+    border:3px solid purple;
+    height:90px;
+    position: relative;
+    top: -30px;
+    left: 120px;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    width:90px;
+}
+
+/* Añade margen bajo el texto */
+.showcase p {
+    margin-bottom: 30px;
+} 
+
+/* Añade una sombra bajo la imágen */
+.showcase img {
+    box-shadow:  7px 7px 7px rgba(0, 0, 0, 0.2);
+}
+
+/* Establece el tamaño de la fuente (font size), reduce el peso de loa fuente (font-weight), agrega margen y alto de línea (line height) */
+
+.navbar h1 {
+    font-size: 30px;
+    font-weight: 300;
+    margin: 10px 0;
+    line-height: 1.2;
+}
+
+/* La lista dentro del contenedor navbar (principal) esta alineada   */
+.navbar ul {
+    display: flex;
+}
+
+/* Cambia el color de ambos enlaces a blanco, agrega padding entre si y margen también */
+
+.navbar a {
+    color: white;
+    padding: 9px;
+    margin:  0 10px;
+}
+
+/* Envuelve la imagen dentro de una figura circular y define su altura para que tome todo el alto de su elemento padre */
+.testimonial img {
+    height: 100%;
+    clip-path: circle();
+}
+
+/* Alinea el texto al centro */
+.testimonial h3{
+    text-align: center;
+}
+
+footer a:hover {
+    color: #9867C5;
+    border-bottom: 2px solid #9867C5;
+}
+
+.stats .fa {
+    color: purple;
+}
+
+/*Se utiliza flexbox para alinear y hay espaciado entre los elementos, estan centrados
+y con el alto de 100% */
+.navbar .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+/*Con esta etiqueta los enlaces cambian de color a una sobra y borde solido */
+.navbar a:hover {
+    color: #9867c5;
+    border-bottom: 3px solid #9867c5;
+}
+
+
+.showcase input[type='email']{
+    padding: 10px 70px 10px 0 ;
+    font-size:  14px;
+    border: none;
+    border-radius: 6px;
+    padding-left: 6px;
+}
+
+@media(max-width: 768px) {
+    .grid,
+    .grid-3 {
+      grid-template-columns: 1fr;
+    }
+    .showcase {
+        height: auto;
+        text-align: center;
+    }
+    .image {
+        width: 600px;
+        margin-left: 80px;
+    }
+    .stats .flex {
+        flex-direction: column;
+      }
+    
+    .stats {
+        text-align: center;
+    }
+    .stat {
+        width: 100%;
+        padding-right: 80px;
+    }
+    .circle {
+        background-color: transparent;
+        border:3px solid purple;
+        height:90px;
+        position: relative;
+        top: -30px;
+        left: 270px;
+        border-radius:50%;
+        -moz-border-radius:50%;
+        -webkit-border-radius:50%;
+        width:90px;
+    }
+}
+
+/* Dispositivos móviles */
+@media(max-width: 500px) {
+    .navbar {
+      height: 100px;
+    }
+    /* Cambia la alineación. El logo del título se queda en la parte superior, los enlaces de navegación ahora se muestran debajo*/
+
+.navbar .flex {
+    flex-direction: column;
+  }
+
+
+/* Cuando pasamos encima el ratón, retienen el texto blanco y cambia el borde a negro */
+
+  .navbar a:hover {
+    color: white;
+    border-bottom: 2px solid black;
+  }
+
+
+/* Establecer el color púrpura para el fondo de los enlaces de navegación, redondear las esquinas de los bordes y darle algo de espaciado*/
+
+  .navbar ul {
+    background: #9867C5;
+    border-radius: 5px;
+    padding: 10px 0;
+  }
+
+
+/* Alinear el texto al centro */
+
+  .showcase {
+    height: auto;
+    text-align: center;
+  }
+
+
+/* Reducir el tamaño de la fuente */
+
+.little-info {
+    font-size: 13px;
+  }
+
+
+/* Reducir el ancho de la imágen */
+
+  .image {
+    width: 350px;
+    margin-left: 70px;
+  }
+
+  .stat {
+    margin-bottom: 40px;
+  }
+
+
+/* Mover el círculo una vez más */
+
+.circle {
+      background-color: transparent;
+      border:3px solid purple;
+      height:90px;
+      position: relative;
+      top: -30px;
+      left: 150px;
+      border-radius:50%;
+      -moz-border-radius:50%;
+      -webkit-border-radius:50%;
+      width:90px;
+  }
+}
